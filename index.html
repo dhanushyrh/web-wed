@@ -1,0 +1,163 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="main.css"> 
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/font-awesome/4.5.0/css/font-awesome.min.css">
+    <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Pinyon+Script">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/bulma/0.9.4/css/bulma.min.css">   
+    <link rel="stylesheet" href="https://gistcdn.githack.com/mfd/09b70eb47474836f25a21660282ce0fd/raw/e06a670afcb2b861ed2ac4a1ef752d062ef6b46b/Gilroy.css">
+    <title>D P</title>
+    <style>
+        body {
+            font:18px 'Gilroy', sans-serif;
+        }
+    </style>
+</head>
+<body>
+    <div class="float" >
+        <i class="fa fa-heart my-float"></i>
+    </div>
+    <section class="hero bg-img is-fullheight">
+        <div class="hero-body columns " style="z-index: 1; align-items: start; ">
+            <div class="div column is-full">
+                <div class="wrapper">
+                    <div class="frame">
+                        <img src="DP LOGO.svg" alt="" >
+                    </div>
+                  </div>
+            </div>
+            
+        </div>
+        <div class="hero-body columns " style="z-index: 1; align-items: start; padding: 0px;">
+            <div class="div column is-full">
+                <div style="text-align: center;">
+                
+                    <h1 style="font-family: Pinyon Script; font-size: 50px;
+                    color: #cda423;">Dhanush</h1>
+                    <h1 style="font-family: Pinyon Script; font-size: 30px;
+                    color: #dac685;">&</h1>
+                    <h1 style="font-family: Pinyon Script; font-size: 50px;
+                    color: #cda423;">Priyanka</h1>
+                    <h2 style=" font-size: 20px;
+                    color: #ddc576; padding-top: 25px; text-transform: lowercase;"> AWAIT YOUR PRESENCE FOR our WEDDING
+CELEBRATION on <br> <span class="is-size-4	has-text-weight-semibold	">28th of January 2024</span></h2>
+                </div>    
+                  
+            </div>
+            
+        </div>
+        <!-- <div class="hero-body columns " style=" align-items: end; margin-top: 0px; ">
+            <div class="div column is-full">
+                <div class="container ">
+                    <div id="countdown" style="text-align: center;">
+                      <ul>
+                        <li style="display: inline-block; " class="numbers"><span id="days"></span>Days</li>
+                        <li style="display: inline-block; " class="numbers"><span id="hours"></span>Hours</li>
+                        <li style="display: inline-block; " class="numbers"><span id="minutes"></span>Minutes</li>
+                        <li style="display: inline-block; " class="numbers"><span id="seconds"></span>Seconds</li>
+                      </ul>
+                    </div>
+                    <div id="content" style="display: hidden;" class="emoji">
+                      <h2>Its my Day</h2>
+                    </div>
+                  </div>
+            </div>
+            
+        </div> -->
+        
+      </section>
+      <section class="bgg-img">
+        <div class="hero-body columns " style="z-index: 1; align-items: end; margin-top: 0px">
+            <h1 class="heading">Events</h1>
+            <div class="div column is-full">
+                <div class="card">
+                    <div class="card-content">
+                        <h2  style="font-size: 22px; font-weight: 500;">Haldi</h2>
+                        <div class="card-image">
+                            <figure class="image is-4by3">
+                              <img src="https://bulma.io/images/placeholders/1280x960.png" alt="Placeholder image">
+                            </figure>
+                          </div>
+                    </div>
+                    <footer class="card-footer">
+                      <p class="card-footer-item">
+                        <span>
+                           <a href="https://twitter.com/codinghorror/status/506010907021828096">Location</a>
+                        </span>
+                      </p>
+                      
+                    </footer>
+                  </div>
+            </div>
+            <div class="div column is-full">
+                <div class="card">
+                    <div class="card-content">
+                        <h2  style="font-size: 22px; font-weight: 500;">Haldi</h2>
+                        <div class="card-image">
+                            <figure class="image is-4by3">
+                              <img src="https://bulma.io/images/placeholders/1280x960.png" alt="Placeholder image">
+                            </figure>
+                          </div>
+                    </div>
+                    <footer class="card-footer">
+                      <p class="card-footer-item">
+                        <span>
+                           <a href="https://twitter.com/codinghorror/status/506010907021828096">Location</a>
+                        </span>
+                      </p>
+                      
+                    </footer>
+                  </div>
+            </div>
+            
+        </div>
+      </section>
+</body>
+<script>
+(function () {
+  const second = 1000,
+        minute = second * 60,
+        hour = minute * 60,
+        day = hour * 24;
+
+  //I'm adding this section so I don't have to keep updating this pen every year :-)
+  //remove this if you don't need it
+  let today = new Date(),
+      dd = String(today.getDate()).padStart(2, "0"),
+      mm = String(today.getMonth() + 1).padStart(2, "0"),
+      yyyy = today.getFullYear(),
+      nextYear = yyyy,
+      dayMonth = "10/31/",
+      birthday = dayMonth + yyyy;
+  
+  today = mm + "/" + dd + "/" + yyyy;
+  if (today > birthday) {
+    birthday = dayMonth + nextYear;
+  }
+  //end
+  
+  const countDown = new Date(birthday).getTime(),
+      x = setInterval(function() {    
+
+        const now = new Date().getTime(),
+              distance = countDown - now;
+
+        document.getElementById("days").innerText = Math.floor(distance / (day)),
+          document.getElementById("hours").innerText = Math.floor((distance % (day)) / (hour)),
+          document.getElementById("minutes").innerText = Math.floor((distance % (hour)) / (minute)),
+          document.getElementById("seconds").innerText = Math.floor((distance % (minute)) / second);
+
+        //do something later when date is reached
+        if (distance < 0) {
+          document.getElementById("headline").innerText = "It's my birthday!";
+          document.getElementById("countdown").style.display = "none";
+          document.getElementById("content").style.display = "block";
+          clearInterval(x);
+        }
+        //seconds
+      }, 0)
+  }());
+</script>
+</html>
