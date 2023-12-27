@@ -1,204 +1,151 @@
 <!DOCTYPE html>
 <html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="stylesheet" href="main.css" />
+    <!-- Fonts -->
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Carattere&family=Jost:wght@100;300;400;500&display=swap"
+      rel="stylesheet"
+    />
+    <!-- Favicons -->
+    <link
+      rel="apple-touch-icon"
+      sizes="180x180"
+      href="/assets/favicon/apple-touch-icon.png"
+    />
+    <link
+      rel="icon"
+      type="image/png"
+      sizes="32x32"
+      href="/assets/favicon/favicon-32x32.png"
+    />
+    <link
+      rel="icon"
+      type="image/png"
+      sizes="16x16"
+      href="/assets/favicon/favicon-16x16.png"
+    />
+    <link rel="manifest" href="/assets/favicon/site.webmanifest" />
+    <!-- Animations -->
+    <script
+      src="https://unpkg.com/@dotlottie/player-component@latest/dist/dotlottie-player.mjs"
+      type="module"
+    ></script>
+    <title>D & P</title>
+  </head>
 
-<head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <link rel="stylesheet" href="main.css">
-    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/font-awesome/4.5.0/css/font-awesome.min.css">
-    <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Pinyon+Script">
-    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/bulma/0.9.4/css/bulma.min.css">
-    <link rel="stylesheet"
-        href="https://gistcdn.githack.com/mfd/09b70eb47474836f25a21660282ce0fd/raw/e06a670afcb2b861ed2ac4a1ef752d062ef6b46b/Gilroy.css">
-    <title>D P</title>
-    <style>
-        body {
-            font: 18px 'Gilroy', sans-serif;
-        }
-    </style>
-</head>
-
-<body>
-    <!-- <div class="float">
-        <i class="fa fa-heart my-float"></i>
-    </div> -->
-    <section class="hero bg-img is-fullheight">
-        <div class="hero-body columns " style="z-index: 1; align-items: start; ">
-            <div class="div column is-full">
-                <div class="wrapper">
-                    <div class="frame">
-                        <img src="DP LOGO.svg" alt="">
-                    </div>
-                </div>
-            </div>
-
+  <body>
+    <!-- Hero section -->
+    <section class="hero bg-img">
+      <div class="hero-logo">
+        <div class="wrapper">
+          <div class="frame">
+            <img
+              src="/assets/DP LOGO.svg"
+              alt="logo"
+              style="width: 100%; height: 100%"
+            />
+          </div>
         </div>
-        <div class="hero-body columns " style="z-index: 1; align-items: start; padding: 0px;">
-            <div class="div column is-full">
-                <div style="text-align: center;">
-
-                    <h1 style="font-family: Pinyon Script; font-size: 50px;
-                    color: #cda423;">Dhanush</h1>
-                    <h1 style="font-family: Pinyon Script; font-size: 30px;
-                    color: #dac685;">&</h1>
-                    <h1 style="font-family: Pinyon Script; font-size: 50px;
-                    color: #cda423;">Priyanka</h1>
-                    <h2 style=" font-size: 20px;
-                    color: #ddc576; padding-top: 25px; text-transform: lowercase;"> AWAIT YOUR PRESENCE FOR our WEDDING
-                        CELEBRATION on <br> <span class="is-size-4	has-text-weight-semibold	">28th of January
-                            2024</span></h2>
-                </div>
-
-            </div>
-
-        </div>
-        <div class="columns" style=" margin-top: 0px; ">
-            <div class="div column is-full">
-                <div class="container ">
-                    <h1 style="padding: 5px; font-weight: 600; color: #f2dd98;">Party Begins in</h1>
-                    <div id="countdown" style="text-align: center;">
-                        <ul>
-                            <li style="display: inline-block; " class="numbers"><span id="days"></span>Days</li>
-                            <li style="display: inline-block; " class="numbers"><span id="hours"></span>Hours</li>
-                            <li style="display: inline-block; " class="numbers"><span id="minutes"></span>Minutes</li>
-                            <li style="display: inline-block; " class="numbers"><span id="seconds"></span>Seconds</li>
-                        </ul>
-                    </div>
-                    <div id="content" style="display: hidden;" class="emoji">
-                        <h2>Its my Day</h2>
-                    </div>
-                </div>
-            </div>
-
-            <div class=" column is-full">
-                <div class="containr ">
-                    <div class="field">
-                        <div class="scroll"></div>
-                    </div>
-                </div>
-            </div>
-        </div>
-
-
+      </div>
+      <div class="hero-text1">
+        <h1>Dhanush</h1>
+        <h1>&</h1>
+        <h1>Priyanka</h1>
+      </div>
+      <div class="hero-text2">
+        <p>
+          Await your presence for our wedding celebrations on <br />
+          <span style="font-size: 30px; font-weight: 400"
+            >28th of January 2024</span
+          >
+        </p>
+      </div>
     </section>
-    <section class="bgg-img">
-        <div class="hero-body  " style="z-index: 1; margin-top: 0px">
-            <h1 class="heading">Events</h1>
-            <div class="div columns is-full">
 
-                <div class="column">
-                    <div class="card">
-                        <div class="card-content">
-                            <h2 style="font-size: 22px; font-weight: 500;">Haldi</h2>
-                            <div class="card-image">
-                                <figure class="image is-4by3">
-                                    <img src="haldi.jpg"
-                                        alt="Placeholder image">
-                                </figure>
-                            </div>
-                        </div>
-                        <footer class="card-footer">
-                            <p class="card-footer-item">
-                                <span>
-                                    <a href="https://maps.google.com?q=Sri%20Nagalakshmi%20Sabhabhavana,%20Bus%20Stop,%20Chikkamagaluru%20-%20Sringeri%20Rd,%20Seegodu,%20Karnataka%20577112&ftid=0x3bbb3966dc07af19:0x4306ed43d6a7d364&hl=en-IN&gl=in&coh=176814&entry=gps&lucs=,47065934">Location</a>
-                                </span>
-                            </p>
-
-                        </footer>
-                    </div>
-                </div>
-                <div class="column">
-                    <div class="card">
-                        <div class="card-content">
-                            <h2 style="font-size: 22px; font-weight: 500;">Marriage</h2>
-                            <div class="card-image">
-                                <figure class="image is-4by3">
-                                    <img src="marriage.jpg"
-                                        alt="Placeholder image">
-                                </figure>
-                            </div>
-                        </div>
-                        <footer class="card-footer">
-                            <p class="card-footer-item">
-                                <span>
-                                    <a href="https://maps.google.com?q=Sri%20Nagalakshmi%20Sabhabhavana,%20Bus%20Stop,%20Chikkamagaluru%20-%20Sringeri%20Rd,%20Seegodu,%20Karnataka%20577112&ftid=0x3bbb3966dc07af19:0x4306ed43d6a7d364&hl=en-IN&gl=in&coh=176814&entry=gps&lucs=,47065934">Location</a>
-                                </span>
-                            </p>
-
-                        </footer>
-                    </div>
-                </div>
-                <div class="column">
-                    <div class="card">
-                        <div class="card-content">
-                            <h2 style="font-size: 22px; font-weight: 500;">Reception</h2>
-                            <div class="card-image">
-                                <figure class="image is-4by3">
-                                    <img src="reception.jpg"
-                                        alt="Placeholder image">
-                                </figure>
-                            </div>
-                        </div>
-                        <footer class="card-footer">
-                            <p class="card-footer-item">
-                                <span>
-                                    <a href="https://maps.google.com?q='OLV%20HILLTOP'%20-%20The%20Party%20Venue,%20Airport%,%20Mary%20Hill,%20Gurunagar,%20Mangaluru,%20Karnataka%20575008&ftid=0x3ba35a06649f0a7b:0x1d0a15a1a43e8832&hl=en-IN&gl=in&coh=176814&entry=gps&lucs=,47065934">Location</a>
-                                </span>
-                            </p>
-
-                        </footer>
-                    </div>
-                </div>
-            </div>
-
-
-        </div>
+    <!-- Countdown -->
+    <section class="countdown">
+      <dotlottie-player
+        src="https://lottie.host/43ac5161-adc2-446c-86ed-4c066302af0a/NJwDEiSjdQ.json"
+        background="transparent"
+        speed="1"
+        style="width: 100%; height: 100px"
+        direction="1"
+        mode="bounce"
+        loop
+        autoplay
+      ></dotlottie-player>
+      <div class="countdown-position">
+        <h1 style="margin: 0; font-size: 20px; font-weight: 300">
+          Celebrations begin in
+        </h1>
+        <div class="container" id="countdown"></div>
+      </div>
     </section>
-</body>
-<script>
-    (function () {
-        const second = 1000,
-            minute = second * 60,
-            hour = minute * 60,
-            day = hour * 24;
 
-        //I'm adding this section so I don't have to keep updating this pen every year :-)
-        //remove this if you don't need it
-        let today = new Date(),
-            dd = String(today.getDate()).padStart(2, "0"),
-            mm = String(today.getMonth() + 1).padStart(2, "0"),
-            yyyy = today.getFullYear(),
-            nextYear = yyyy,
-            dayMonth = "10/31/",
-            birthday = dayMonth + yyyy;
+    <!-- Events -->
+    <section class="events-bg">
+      <h1
+        style="margin: 5px; font-size: 30px; font-weight: 500; color: aliceblue"
+      >
+        EVENTS
+      </h1>
+      <div class="events-cards">
+        <div class="events-card">
+          <h2 style="margin: 0; color: #743089">HALDI</h2>
+          <img
+            style="margin: 5px auto; height: 70%; width: 80%"
+            src="/assets/haldi.jpg"
+            alt="Placeholder image"
+          />
+          <p class="card-footer-item" style="margin: 5px 0">
+            <a
+              style="font-size: 18px"
+              href="https://maps.google.com?q=Sri%20Nagalakshmi%20Sabhabhavana,%20Bus%20Stop,%20Chikkamagaluru%20-%20Sringeri%20Rd,%20Seegodu,%20Karnataka%20577112&ftid=0x3bbb3966dc07af19:0x4306ed43d6a7d364&hl=en-IN&gl=in&coh=176814&entry=gps&lucs=,47065934"
+              >Venue : Sri Nagalakshmi Sabhabhavana</a
+            >
+          </p>
+        </div>
+        <!-- marriage -->
+        <div class="events-card">
+          <h2 style="margin: 0; color: #743089">MARRIAGE</h2>
+          <img
+            style="margin: 5px auto; height: 70%; width: 80%"
+            src="/assets/marriage.jpg"
+            alt="Placeholder image"
+          />
+          <p class="card-footer-item" style="margin: 5px 0">
+            <a
+              style="font-size: 18px"
+              href="https://maps.google.com?q=Sri%20Nagalakshmi%20Sabhabhavana,%20Bus%20Stop,%20Chikkamagaluru%20-%20Sringeri%20Rd,%20Seegodu,%20Karnataka%20577112&ftid=0x3bbb3966dc07af19:0x4306ed43d6a7d364&hl=en-IN&gl=in&coh=176814&entry=gps&lucs=,47065934"
+              >Venue : Sri Nagalakshmi Sabhabhavana</a
+            >
+          </p>
+        </div>
+        <!-- reception -->
+        <div class="events-card">
+          <h2 style="margin: 0; color: #743089">RECEPTION</h2>
+          <img
+            style="margin: 5px auto; height: 70%; width: 80%"
+            src="/assets/reception.jpg"
+            alt="Placeholder image"
+          />
+          <p class="card-footer-item" style="margin: 5px 0">
+            <a
+              style="font-size: 18px"
+              href="https://maps.google.com?q='OLV%20HILLTOP'%20-%20The%20Party%20Venue,%20Airport%,%20Mary%20Hill,%20Gurunagar,%20Mangaluru,%20Karnataka%20575008&ftid=0x3ba35a06649f0a7b:0x1d0a15a1a43e8832&hl=en-IN&gl=in&coh=176814&entry=gps&lucs=,47065934"
+              >Venue : OLV Hilltop</a
+            >
+          </p>
+        </div>
+      </div>
+    </section>
 
-        today = mm + "/" + dd + "/" + yyyy;
-        if (today > birthday) {
-            birthday = dayMonth + nextYear;
-        }
-        //end
-
-        const countDown = new Date(birthday).getTime(),
-            x = setInterval(function () {
-
-                const now = new Date().getTime(),
-                    distance = countDown - now;
-
-                document.getElementById("days").innerText = Math.floor(distance / (day)),
-                    document.getElementById("hours").innerText = Math.floor((distance % (day)) / (hour)),
-                    document.getElementById("minutes").innerText = Math.floor((distance % (hour)) / (minute)),
-                    document.getElementById("seconds").innerText = Math.floor((distance % (minute)) / second);
-
-                //do something later when date is reached
-                if (distance < 0) {
-                    document.getElementById("headline").innerText = "It's my birthday!";
-                    document.getElementById("countdown").style.display = "none";
-                    document.getElementById("content").style.display = "block";
-                    clearInterval(x);
-                }
-                //seconds
-            }, 0)
-    }());
-</script>
-
+    <!-- Countdown script -->
+    <script src="script.js"></script>
+  </body>
 </html>
