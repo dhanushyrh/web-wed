@@ -102,10 +102,9 @@ body {
     rgba(0, 0, 0, 0.3) 0px 1px 3px -1px;
 }
 .countdown-position {
-  position: absolute;
+  z-index: 1;
   width: 100%;
   text-align: center;
-  top: 10px;
   margin: auto;
 }
 
@@ -128,7 +127,7 @@ body {
   display: flex;
   flex-direction: column;
   background-color: #eaeaea;
-  height: 50vh;
+  height: 50%;
 }
 
 a {
