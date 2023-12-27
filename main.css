@@ -1,33 +1,30 @@
 html,
 body {
-  font-family: "Carattere", cursive;
   font-family: "Jost", sans-serif;
-  width: 100%;
-  height: 100%;
   overflow-x: hidden;
   margin: 0;
 }
 
 /* Hero section */
 .hero {
-  height: 100%;
   display: flex;
   flex-direction: column;
   text-align: center;
-  justify-items: space-between;
+  justify-content: space-between;
+  align-items: center;
+  flex-shrink: 1;
 }
 
 .bg-img {
-  position: relative;
   width: 100%;
   height: 100vh;
   background: url("/assets/1U6A8892.jpg") center center no-repeat;
   background-size: cover;
-  opacity: 0.8;
+  opacity: 0.7;
 }
 
 .hero-logo {
-  margin-top: 56px;
+  padding: 10px;
 }
 
 .wrapper {
@@ -74,9 +71,9 @@ body {
   }
 }
 
-.hero-text1 {
-  margin-top: 150px;
-}
+/* .hero-text1 {
+  margin-top: 5vh;
+} */
 
 .hero-text1 h1 {
   font-family: "Carattere", cursive;
@@ -87,7 +84,8 @@ body {
 
 .hero-text2 {
   font-weight: 300;
-  margin: auto;
+  height: 33%;
+  /* margin: auto; */
   font-size: 20px;
   color: #ddc576;
 }
@@ -95,18 +93,18 @@ body {
 /* Countdown */
 .countdown {
   position: relative;
-  text-align: center;
+  padding: 10px 0;
+  display: flex;
   height: 15vh;
-  padding: 10px;
+  width: 100vw;
   margin: 20px 0;
   box-shadow: rgba(50, 50, 93, 0.25) 0px 2px 5px -1px,
     rgba(0, 0, 0, 0.3) 0px 1px 3px -1px;
 }
 .countdown-position {
-  position: absolute;
-  width: 90%;
+  z-index: 1;
+  width: 100%;
   text-align: center;
-  top: 38px;
   margin: auto;
 }
 
@@ -116,9 +114,9 @@ body {
 
 /* Events */
 .events-bg {
-  padding: 0 10px;
+  padding: 10px 10px;
   background-image: linear-gradient(to bottom right, #7d1212, #2a0853);
-  height: 100vh;
+  height: 100%;
   opacity: 0.8;
   text-align: center;
 }
@@ -129,7 +127,7 @@ body {
   display: flex;
   flex-direction: column;
   background-color: #eaeaea;
-  height: 28vh;
+  height: 50%;
 }
 
 a {
