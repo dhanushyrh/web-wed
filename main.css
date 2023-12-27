@@ -13,6 +13,7 @@ body {
   justify-content: space-between;
   align-items: center;
   flex-shrink: 1;
+  height: 100vh;
 }
 
 .bg-img {
@@ -25,6 +26,7 @@ body {
 
 .hero-logo {
   padding: 10px;
+  height: 25%;
 }
 
 .wrapper {
@@ -71,20 +73,20 @@ body {
   }
 }
 
-/* .hero-text1 {
-  margin-top: 5vh;
-} */
+.hero-text1 {
+  margin: auto;
+}
 
 .hero-text1 h1 {
   font-family: "Carattere", cursive;
   font-size: 50px;
-  color: #cda423;
+  color: #fcc201;
   font-weight: 500;
 }
 
 .hero-text2 {
-  font-weight: 300;
-  height: 33%;
+  font-weight: 400;
+  height: 25%;
   /* margin: auto; */
   font-size: 20px;
   color: #ddc576;
